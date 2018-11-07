@@ -1,0 +1,17 @@
+<div>
+  <h1>查看全部钩子(1.显示一个组件初始化后所触发的钩子 2.绑定的属性发生变化时所触发的钩子)</h1>
+  <app-peek-a-boo-parent></app-peek-a-boo-parent>
+</div>
+<hr>
+<div>
+  <h1>ngOnChanges钩子</h1>
+  <app-on-changes-parent></app-on-changes-parent>
+  <div>
+    <p>当 power 属性的字符串值变化时，相应的日志就出现了。 但是 ngOnChanges 并没有捕捉到 hero.name 的变化。 这是第一个意外。</p>
+  </div>
+  <div>
+    <p>Angular 只会在输入属性的值发生变化时调用这个钩子。而 hero 属性的值是一个英雄对象的引用。
+    Angular 不会关注这个英雄对象的 name 属性的变化。因为这个英雄对象的引用没有发生变化，所以于 Angular 的视角开来，也就没有什么
+      需要报告的变化了。</p>
+  </div>
+</div>

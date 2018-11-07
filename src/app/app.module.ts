@@ -2,31 +2,28 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCheckboxModule, MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
-import { ParentComponent } from './parent/parent.component';
-import { ChildComponent } from './child/child.component';
+import { MatButtonModule, MatCheckboxModule, MatToolbarModule, MatIconModule, MatListModule } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
-import { IndexComponent } from './index/index.component';
 import { HttpClientModule } from '@angular/common/http';
+import { UIRouterModule } from '@uirouter/angular';
+import { AngularModule } from './angular/angular.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ParentComponent,
-    ChildComponent,
-    IndexComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    UIRouterModule.forRoot(),
     MatButtonModule,
     MatCheckboxModule,
     LayoutModule,
     MatToolbarModule,
-    MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    AngularModule
   ],
   providers: [],
   bootstrap: [AppComponent]
