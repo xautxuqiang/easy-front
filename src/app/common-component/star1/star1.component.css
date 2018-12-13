@@ -1,0 +1,6 @@
+.rating {
+  list-style-type: none;
+}
+.rating-item {
+  float: left;
+}

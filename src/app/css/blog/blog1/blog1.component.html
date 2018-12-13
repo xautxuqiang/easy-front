@@ -1,0 +1,41 @@
+<h3>例子：.box p</h3>
+<div class="box">
+  <p>001</p>
+  <div>
+    <p>002</p>
+    <p>003</p>
+  </div>
+  <p>004</p>
+</div>
+<textarea cols="40" rows="10">
+  <div class="box">
+    <p>001</p>
+    <div>
+      <p>002</p>
+      <p>003</p>
+    </div>
+    <p>004</p>
+</div>
+</textarea>
+<p> class box 下的所有 p 元素都会生效</p>
+<h3>例子：.box > p</h3>
+<div class="box1">
+  <p>001</p>
+    <div>
+      <p>002</p>
+      <p>003</p>
+    </div>
+  <p>004</p>
+</div>
+<textarea cols="40" rows="10">
+  <div class="box1">
+    <p>001</p>
+      <div>
+        <p>002</p>
+        <p>003</p>
+      </div>
+    <p>004</p>
+  </div>
+</textarea>
+<p> > 就是选取底下直接的子元素，所以 001 和 004 生效了</p>
+<p>由上可知.box p會影響到box這個div底下所有的p元素，而因為「>」只會影響到直接的子元素，所以例子中box底下直接接觸到的p元素只有001跟004，所以只有這兩者會改變。</p>

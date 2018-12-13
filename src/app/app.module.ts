@@ -7,6 +7,9 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { HttpClientModule } from '@angular/common/http';
 import { UIRouterModule } from '@uirouter/angular';
 import { AngularModule } from './angular/angular.module';
+import { CssModule } from './css/css.module';
+import { RxjsModule } from './rxjs/rxjs.module';
+import { CommonComponentModule } from './common-component/common-component.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { AngularModule } from './angular/angular.module';
     MatToolbarModule,
     MatIconModule,
     MatListModule,
-    AngularModule
+    AngularModule,
+    CssModule,
+    RxjsModule,
+    CommonComponentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
